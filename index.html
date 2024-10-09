@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tarea progra3 ">
+    <meta name="author" content="Randsiwim LO ">
+    <title>Quiz Interactivo</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!--pantalla inicio-->
+    <div id="inicio" class="pantalla">
+        <h1>Bienvenidos al quiz interactivo </h1>
+        <p>Pon a prueba tus conocimientos respondiendo las siguientes preguntas.</p>
+        <button id="comenzar-btn">Comenzar Quiz</button>
+    </div>
+
+    <!--pantalla de preguntas-->
+    <div id="preguntas" class="pantalla ocultar">
+        <div class="contenedor-pregunta">
+            <h2 id="pregunta-texto">¿Cuál es el lenguaje de marcado utilizado para crear páginas web?</h2>
+            <div id="retroalimentacion" class="retroalimentacion ocultar"></div>
+
+            <!--temporizador-->
+            <div id="temporizador">Tiempo restante: <span id="tiempo-restante">30</span> segundos</div>
+
+                 <!--opciones-->
+                 <ul id="opciones-lista">
+                    <li class="opcion">JavaScript</li>
+                    <li class="opcion">HTML</li>
+                    <li class="opcion">CSS</li>
+                    <li class="opcion">Python</li>
+                </ul>
+            </div>
+            <buton id="siguiente-btn">Siguiente</button>
+            </div>
+
+    <!--pantalla de resultados-->
+    <div id="resultados" class="pantalla ocultar">
+        <h2>Has completado el Quiz</h2>
+        <p>Tu puntaje: <span id="puntaje-final"></span> de <span id="total-preguntas"></span> </p>
+        <p id="mensaje-final"></p>
+        <button id= "reiniciar-btn">Reiniciar Quiz </button>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
